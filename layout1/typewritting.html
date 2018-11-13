@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body{
+		background-color: green;
+	}
+
+	.red{
+		color: red;
+	}
+
+	.white{
+		color:#fff;
+	}
+	</style>
+</head>
+<body>
+
+<h1>Typewriter</h1>
+<p id="demo"></p>
+
+<script>
+var doctype =  "<!DOCTYPE html>";
+var html = "<html>";	
+var speed = 75;
+window.onload = function(){
+
+	typeWriter(doctype, "white");
+	document.getElementById("demo").innerHTML += "</br>";
+	typeWriter(html, "red");
+}
+
+function typeWriter(txt, color) {
+  	for(i = 0; i < txt.length; i++){
+	  	console.log(i);
+	  	var character = txt.charAt(i);
+	  	console.log(character);
+	  	document.getElementById("demo").innerHTML += "<span class='" + color + "'>" + character + "</span>";
+	}
+}
+</script>
+
+</body>
+</html>

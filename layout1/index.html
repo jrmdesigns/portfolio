@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jorime</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/image-slider.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="js/gobacktotop.js"></script>
+	<script src="js/contact-validation.js"></script>
+	<style>
+	.errormsg{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+
+
+
+	<!-- BEGIN HEADER -->
+	<header id="header">
+		<h1 style="float: left; margin-left: 1%">JORIME</h1>
+		<nav id="menu">
+			<ul>
+				<li><a href="#top-box-container" onclick="goTo">Top</a></li>
+				<li><a href="#about-box-container">about</a></li>
+				<li><a href="#work-box-container">work</a></li>
+				<li><a href="#contact-box-container">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- END HEADER -->
+
+
+
+	
+	<!-- BEGIN TOP-BOX-CONTAINER -->
+	<section id="top-box-container">
+		<img src="images/code.png" alt="">
+	</section>
+	<!-- END TOP-BOX-CONTAINER -->
+
+
+
+
+	<!-- BEGIN CONTENT-SLIDER-CONTAINER -->
+	<section id="content-slider-container">
+		<div id="slider-wrapper">
+	<button style="float:left;"class="slider-button slider-button-left" onclick="plusDivs(-1)">&#10094;</button>
+
+		<div class="slideable-content" id="1">
+		<div class="slide-content">
+			<div class="slider-container">
+				<img src="images/jorime2.png" alt="">
+				<div class="slider-caption">
+					project #1
+				</div>
+			</div>
+
+			<div class="slider-container">
+				<img src="images/jorime.png" alt="">
+				<div class="slider-caption">
+					project #2
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="slideable-content" id="2">
+		<div class="slide-content">
+			<div class="slider-container">
+				<img src="https://via.placeholder.com/800x200/333300/000000?Text=project 1" alt="">
+				<div class="slider-caption">
+					project #3
+				</div>
+			</div>
+			<div class="slider-container">
+				<img src="https://via.placeholder.com/800x200/660066/000000?Text=project 2" alt="">
+				<div class="slider-caption">
+					project #4
+				</div>
+			</div>
+		</div>
+	</div>
+		<button class="slider-button slider-button-right" onclick="plusDivs(1)">&#47;&#10095;</button>
+	</section>
+	<!-- END CONTENT-SLIDER-CONTAINER -->
+
+
+
+	<!-- BEGIN ABOUT-BOX-CONTAINER -->
+	<section id="about-box-container">
+		<h2>about</h2>
+		<section class="flexbox">
+			<section class="information-container">
+				<p>Ik ben John Ricardo Meulink, 25 jaar en geboren in Rotterdam en momenteel woonachtig in Breda</p>
+
+				<p>Op mijn tiende speelde ik in-browser zogehete text based games. Dit vond ik zo leuk dat ik dit ook graag zou willen kunnen. Op een dag downloade ik een sourcecode van zo'n text based game en met veel pijn en moeite kreeg ik deze werkend op een localhost server. Echter bestond deze voornamelijk uit foutmeldingen zonder enige vorm van kennis probeer ik de codes aan te passen maar zonder resultaat daarom ben ik dankbaar dan er iets als codegorilla bestaat.</p>
+			</section>
+			<img src="http://via.placeholder.com/250x250" alt="">
+		</section>
+	</section>
+	<!-- END ABOUT-BOX-CONTAINER -->
+
+
+
+
+
+
+
+	<!-- BEGIN WORK-BOX-CONTAINER -->
+	<section id="work-box-container">
+		<h2>work</h2>
+		<div id="work-content-wrapper">
+			<div class="work-content-container image-overlay-container">
+				<img src="https://via.placeholder.com/150/ffff00/000000?Text=IMAGE" alt="Avatar" class="image-overlay-container-image">
+	  			<div class="image-overlay">PROJECT $</div>
+  			</div>
+
+  			<div class="work-content-container image-overlay-container">
+				<img src="https://via.placeholder.com/150/ffff00/000000?Text=IMAGE" alt="Avatar" class="image-overlay-container-image">
+	  			<div class="image-overlay">PROJECT $</div>
+  			</div>
+
+  			<div class="work-content-container image-overlay-container">
+				<img src="https://via.placeholder.com/150/ffff00/000000?Text=IMAGE" alt="Avatar" class="image-overlay-container-image">
+	  			<div class="image-overlay">PROJECT $</div>
+  			</div>
+
+  			<div class="work-content-container image-overlay-container">
+				<img src="https://via.placeholder.com/150/ffff00/000000?Text=IMAGE" alt="Avatar" class="image-overlay-container-image">
+	  			<div class="image-overlay">PROJECT $</div>
+  			</div>
+
+  			<div class="work-content-container image-overlay-container">
+				<img src="https://via.placeholder.com/150/ffff00/000000?Text=IMAGE" alt="Avatar" class="image-overlay-container-image">
+	  			<div class="image-overlay">PROJECT $</div>
+  			</div>
+
+  			<div class="work-content-container image-overlay-container">
+				<img src="https://via.placeholder.com/150/ffff00/000000?Text=IMAGE" alt="Avatar" class="image-overlay-container-image">
+	  			<div class="image-overlay">PROJECT $</div>
+  			</div>
+		</div>
+	</section>
+	<!-- END WORK-BOX-CONTAINER -->
+
+
+	<!-- BEGIN CONTACT-BOX-CONTAINER -->
+	<section id="contact-box-container">
+		<h1>contact</h1>
+		<form autocomplete="off">
+			<label>Name: <span id="error_name" class="errormsg">Name can't be empty</span></label>
+			<input type="text"/>
+			<label>Email: <span id="error_email" class="errormsg">Vul een juist emailadres in</span></label>
+			<input type="text" id="email" onkeyup="checkEmail()"/>
+			<label>Subject: <span id="error_subject" class="errormsg">Subject can't be empty</span></label>
+			<input type="text"/>
+			<label>Message: <span id="error_message" class="errormsg">Message can't be empty</span></label>
+			<textarea></textarea>
+			<input type="submit" value="send"/>
+		</form>
+	</section>
+	<!-- END CONTACT-BOX-CONTAINER -->
+
+	<!-- BEGIN FOOTER-->
+	<footer id="footer">
+		<p>jorime.com 2018</p>
+		<ul>
+			<li><a href="#"><span class="fab fa-twitter-square"></span></a></li>
+			<li><a href="#"><span class="fab fa-facebook"></span></a></li>
+			<li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+		</ul>
+	</footer>
+	<!-- END FOOTER -->
+
+
+
+	<!-- START SCROLL-BACK-BTN -->
+	<button id="scroll-back-btn" onclick="scrollBack()"/>
+	<!-- END SCROLL-BACK-BTN -->
+
+
+	<script src="js/image-slider.js"></script><!-- image-slider javascript -->
+</body>
+</html>
