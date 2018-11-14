@@ -1,4 +1,4 @@
 # PORTFOLIO
 ###### John Meulink
 
-* Welcome on my portfolio project *
+*Welcome on my portfolio project*
