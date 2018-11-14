@@ -11,7 +11,7 @@ a,input{
 }
 
 p, label{
-	color: #e6db74;
+	color: #272822;
 	font-size: 20px;
 }
 
@@ -19,38 +19,17 @@ h1{
 	text-transform: uppercase;
 	color: #f92672;
 	font-size: 50px;
-		font-weight: normal;
-}
-
-h1::before{
-	content: '< ';
-	color: #f8f8f2;
-}
-
-h1::after{
-	content: ' />';
-	color: #f8f8f2;
-	font-size: 100px;
+	font-weight: normal;
 }
 
 h2{
 		font-weight: normal;
 	text-transform: uppercase;
 	font-size: 50px;
-	color: #f8f8f2;
+	color: #f92672;
 	text-align: center;
 }
 
-h2::before{
-	content: '< ';
-	color: #f92672;
-}
-
-h2::after{
-	font-size: 100px;
-	content: ' />';
-	color: #f92672;
-}
 
 input, textarea{
 	display: block;
@@ -60,10 +39,10 @@ input, textarea{
 
 
 #header, #top-box-container, #about-box-container, #work-box-container{
-	background-color: #272822;
+	background-color: #B2B3AC;
 }
 #top-box-container{
-	padding-top:5%;
+	padding-top:4%;
 }
 #top-box-container img{
 	width: 40%;
@@ -86,7 +65,7 @@ input, textarea{
 }
 
 #skillslider-box-container,  #contact-box-container, #footer{
-	background-color: #480000;
+	background-color: #B2B3AC;
 }
 
 #welcome-box-container, #contact-box-container, #footer , #work-box-container{
@@ -95,16 +74,15 @@ input, textarea{
 }
 
 #work-box-container{
-	background-color: #4D4E44;
 }
 
 #about-box-container{
 	padding: 50px 5%;
-	background-color: #44463C;
+	background-color: #91918E;
 }
 
 #contact-box-container{
-	background-color: #58594E;
+	background-color: #91918E;
 }
 
 #about-box-container h2{
