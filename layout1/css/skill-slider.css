@@ -1,0 +1,101 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#skill-slider-wrapper{
+  margin: 0 auto;
+  margin-top: 9%;
+  width:  100%;
+  height: 250px;
+  background-color: #000;
+}
+
+#image-wrapper{
+  width: 20%;
+  height: 100%;
+  background-color: #E8E8E8;
+  float: left;
+}
+
+#slider-wrapper{
+  float: left;
+  height: 100%;
+  width:80%;
+  background-color: #E8E8E8;
+}
+
+#htmlbutton{
+  padding:0;
+  margin:0;
+  position: relative;
+  top: 35%;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  background-color: #000;
+  float: left;
+  border-radius: 50%;
+}
+
+#cssbutton{
+  padding:0;
+  margin:0;
+  position: relative;
+  top: 35%;
+  width: 50px;
+  height: 50px;
+  left: 75%;
+  background-color: #fff;
+  float: left;
+    border-radius: 50%;
+}
+
+#jsbutton{
+  float: left;
+  padding:0;
+  margin:0;
+  position: relative;
+  top: 35%;
+  width: 50px;
+  height: 50px;
+  left: 5%;
+  background-color: #fff;
+  float: left;
+  border-radius: 50%;
+}
+
+.slider:focus{
+  border: 0;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    background: rgba(0,0,0,0);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  height:100%;
+  transform: translateY(-20%);
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 250px;
+  margin-left: -2px;
+    background: #000;
+    cursor: pointer;
+}
+
+
+#js-skill-slider-image{
+  max-width: 50%;
+}
