@@ -10,6 +10,7 @@
 	<script src="../jquery/jquery.js"></script>
 	<script src="js/gobacktotop.js"></script>
 	<script src="js/contact-validation.js"></script>
+	<script src="js/scrollto.js"></script>
 	<style>
 	.errormsg{
 		display: none;
@@ -45,13 +46,11 @@
 
 
 	<!-- BEGIN ABOUT-BOX-CONTAINER -->
-	<section id="about-box-container">
+	<section id="about-box-container" class="anchor">
 		<h2>about</h2>
 		<section class="flexbox">
 			<section class="information-container">
 				<p>Ik ben John Ricardo Meulink, 25 jaar en geboren in Rotterdam en momenteel woonachtig in Breda</p>
-
-				<p>Op mijn tiende speelde ik in-browser zogehete text based games. Dit vond ik zo leuk dat ik dit ook graag zou willen kunnen. Op een dag downloade ik een sourcecode van zo'n text based game en met veel pijn en moeite kreeg ik deze werkend op een localhost server. Echter bestond deze voornamelijk uit foutmeldingen zonder enige vorm van kennis probeer ik de codes aan te passen maar zonder resultaat daarom ben ik dankbaar dan er iets als codegorilla bestaat.</p>
 			</section>
 			<img src="http://via.placeholder.com/150/E8E8E8" alt="">
 		</section>
@@ -81,47 +80,9 @@
 
 
 	<!-- BEGIN WORK-BOX-CONTAINER -->
-	<section id="work-box-container">
+	<section id="work-box-container" class="anchor">
 		<h2>work</h2>
 		<div id="work-content-wrapper">
-			<div class="work-content-container image-overlay-container">
-				<img src="https://via.placeholder.com/150/E8E8E8" alt="Avatar" class="image-overlay-container-image">
-				<div class="image-overlay">PROJECT $</div>
-			</div>
-
-			<div class="work-content-container image-overlay-container">
-				<img src="https://via.placeholder.com/150/E8E8E8" alt="Avatar" class="image-overlay-container-image">
-				<div class="image-overlay">PROJECT $</div>
-			</div>
-
-			<div class="work-content-container image-overlay-container">
-				<img src="https://via.placeholder.com/150/E8E8E8" alt="Avatar" class="image-overlay-container-image">
-				<div class="image-overlay">PROJECT $</div>
-			</div>
-
-			<div class="work-content-container image-overlay-container">
-				<img src="https://via.placeholder.com/150/E8E8E8" alt="Avatar" class="image-overlay-container-image">
-				<div class="image-overlay">PROJECT $</div>
-			</div>
-
-			<div class="work-content-container image-overlay-container">
-				<img src="https://via.placeholder.com/150/E8E8E8" alt="Avatar" class="image-overlay-container-image">
-				<div class="image-overlay">PROJECT $</div>
-			</div>
-
-			<div class="work-content-container image-overlay-container">
-				<img src="https://via.placeholder.com/150/E8E8E8" alt="Avatar" class="image-overlay-container-image">
-				<div class="image-overlay">PROJECT $</div>
-			</div>			<div class="work-content-container image-overlay-container">
-				<img src="https://via.placeholder.com/150/E8E8E8" alt="Avatar" class="image-overlay-container-image">
-				<div class="image-overlay">PROJECT $</div>
-			</div>
-
-			<div class="work-content-container image-overlay-container">
-				<img src="https://via.placeholder.com/150/E8E8E8" alt="Avatar" class="image-overlay-container-image">
-				<div class="image-overlay">PROJECT $</div>
-			</div>
-
 			<div class="work-content-container image-overlay-container">
 				<img src="https://via.placeholder.com/150/E8E8E8" alt="Avatar" class="image-overlay-container-image">
 				<div class="image-overlay">PROJECT $</div>
@@ -147,13 +108,15 @@
 
 
 	<!-- BEGIN CONTACT-BOX-CONTAINER -->
-	<section id="contact-box-container">
+	<section id="contact-box-container" class="anchor">
 		<h2>contact</h2>
 		<form autocomplete="off">
 			<section class="form-group">
 				<label>Name: <span id="error_name" class="errormsg">Name can't be empty</span></label>
 				<input type="text"/>
 				<label>Email: <span id="error_email" class="errormsg">Correct email required</span></label>
+				<input type="text" id="email" onkeyup="checkEmail()"/>
+				<label>Phonenumber*:</label>
 				<input type="text" id="email" onkeyup="checkEmail()"/>
 				<label>Subject: <span id="error_subject" class="errormsg">Subject can't be empty</span></label>
 				<input type="text"/>
