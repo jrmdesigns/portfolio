@@ -51,7 +51,7 @@
 		<h2>about</h2>
 		<section class="flexbox">
 			<section class="information-container">
-				<p>Ik ben John Ricardo Meulink, 25 jaar en geboren in Rotterdam en momenteel woonachtig in Breda</p>
+				<p>Met mijn passie voor programmeren en leren zoek ik altijd naar nieuwe methodes om problemen op te lossen. Daarbij kan ik snel hoofdrekenen wat ook een handige eigenschap is in de wereld van de programmeurs. Een goede eigenschap van mij is dat ik oplossingsgericht ben. Ik ben behulpzaam en loyaal, als persoon ben ik erg toegankelijk en sta ik altijd open om andere te helpen.</p>
 			</section>
 			<img src="images/me.jpg" id="about-photo" alt="">
 		</section>
@@ -59,17 +59,26 @@
 
 		<div id="skill-slider-wrapper">
 			<div id="image-wrapper">
+				<h3 id="js-about-slider-info">Slide to show content</h3>
+				<a href="" id="js-about-photo-url" target="_blank" >
 				<img src="" alt="" id="js-skill-slider-image"/>	
+				</a>
 			</div>
 			<div id="slider-wrapper">
-				<div id="jsbutton">
+				<div id="htmlbutton" class="skill-button">
+					html
 				</div>
-				<div id="htmlbutton">
+				<div id="cssbutton" class="skill-button">
+					css
 				</div>
-				<div id="cssbutton">
+				<div id="jsbutton" class="skill-button">
+					js
 				</div>
+				<h4>scroll</h4>
 				<input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+
 			</div>
+
 		</div>
 	</section>
 	<!-- END ABOUT-BOX-CONTAINER -->
@@ -117,8 +126,8 @@
 				<input type="text"/>
 				<label>Email: <span id="error_email" class="errormsg">Correct email required</span></label>
 				<input type="text" id="email" onkeyup="checkEmail()"/>
-				<label>Phonenumber*:</label>
-				<input type="text" id="email" onkeyup="checkEmail()"/>
+				<!-- <label>Phonenumber*:</label> -->
+<!-- 				<input type="text" id="email" onkeyup="checkEmail()"/> -->
 				<label>Subject: <span id="error_subject" class="errormsg">Subject can't be empty</span></label>
 				<input type="text"/>
 			</section>

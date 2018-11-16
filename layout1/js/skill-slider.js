@@ -20,10 +20,14 @@ for(i = 0; i < buttons.length; i++){
 slider.oninput = function(){
   for(i = 0; i < buttons.length; i++){
     if(slider.value >= buttonPos[i] && slider.value <= buttonPos[i] + buttonWidth[i]){ // if value of slider is bigger than button position AND the value of sider is smaller than position + width
-        $('#js-skill-slider-image').attr('src', imagesPath + imageArray[i]);
+      $('#js-about-photo-url').attr('href', imagesPath + imageArray[i]);
+      $('#js-skill-slider-image').attr('src', imagesPath + imageArray[i]);
+      document.getElementById("js-about-slider-info").style.display = "none" ;
       break;
     } else {
+      $('#js-about-photo-url').attr('href', "");
       $('#js-skill-slider-image').attr('src', "");
+      document.getElementById("js-about-slider-info").style.display = "block" ;
     }
   }
 }

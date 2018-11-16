@@ -26,44 +26,34 @@ body{
   background-color: #E8E8E8;
 }
 
-#htmlbutton{
+.skill-button{
+  float: left;
   padding:0;
   margin:0;
   position: relative;
-  top: 35%;
   width: 50px;
   height: 50px;
-  left: 50%;
-  background-color: #000;
+  background-color: #fff;
   float: left;
   border-radius: 50%;
+  border: 3px solid #3A050C;
+  line-height: 50px;
+}
+
+
+#htmlbutton{
+  top: 35%;
+  left: 25%;
 }
 
 #cssbutton{
-  padding:0;
-  margin:0;
-  position: relative;
   top: 35%;
-  width: 50px;
-  height: 50px;
-  left: 75%;
-  background-color: #fff;
-  float: left;
-    border-radius: 50%;
+  left: 50%;
 }
 
 #jsbutton{
-  float: left;
-  padding:0;
-  margin:0;
-  position: relative;
   top: 35%;
-  width: 50px;
-  height: 50px;
-  left: 5%;
-  background-color: #fff;
-  float: left;
-  border-radius: 50%;
+  left: 75%;
 }
 
 .slider:focus{
@@ -78,7 +68,7 @@ body{
     -webkit-transition: .2s;
     transition: opacity .2s;
   height:100%;
-  transform: translateY(-20%);
+  transform: translateY(-23%);
 }
 
 .slider:hover {
@@ -97,5 +87,17 @@ body{
 
 
 #js-skill-slider-image{
-  max-width: 50%;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+
+h4{
+
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  position: absolute;
+  bottom: 5px;
+  right:5px;
+  text-transform: uppercase;
 }

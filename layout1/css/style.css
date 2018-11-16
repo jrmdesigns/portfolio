@@ -243,7 +243,7 @@ input[type=submit]{
 input[type=submit]:hover{
 	background-color: #404137;
 
-	border: 2px dashed #FF9800;
+	border: 2px solid #FF9800;
 	color: #f8f8f2;
 	cursor: pointer;
 }
